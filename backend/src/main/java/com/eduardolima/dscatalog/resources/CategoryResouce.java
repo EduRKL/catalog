@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.eduardolima.dscatalog.entities.Category;
+import com.eduardolima.dscatalog.services.CategoryService;
 
 
 @RestController
@@ -17,10 +18,10 @@ import com.eduardolima.dscatalog.entities.Category;
 public class CategoryResouce {
 	
 	@Autowired
-	private Category service;
+	private CategoryService service;
 	
 	@GetMapping
-	public ResponseEntity<java.util.List<Category>> findAll() {
+	public ResponseEntity<List<Category>> findAll() {
 		List<Category> list = service.findAll();
 		
 		return ResponseEntity.ok().body(list);
