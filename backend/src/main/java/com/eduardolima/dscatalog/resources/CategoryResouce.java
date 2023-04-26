@@ -16,7 +16,6 @@ import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 
 import com.eduardolima.dscatalog.dto.CategoryDTO;
-import com.eduardolima.dscatalog.entities.Category;
 import com.eduardolima.dscatalog.services.CategoryService;
 
 
